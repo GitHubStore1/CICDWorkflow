@@ -7,7 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <Compile Remove="TestProject1\bin\**" />
+    <Compile Remove="TestProject1\obj\**" />
+    <Content Remove="TestProject1\bin\**" />
+    <Content Remove="TestProject1\obj\**" />
+    <EmbeddedResource Remove="TestProject1\bin\**" />
+    <EmbeddedResource Remove="TestProject1\obj\**" />
+    <None Remove="TestProject1\bin\**" />
+    <None Remove="TestProject1\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
   </ItemGroup>
 
 </Project>
